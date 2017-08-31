@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lingdeqin.timeup.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"/>
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="test"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试："/>
+            <Button
+                android:id="@+id/btn_shutdownTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关机"/>
+
+            <Switch
+                android:id="@+id/switch_flightModeTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="飞行模式"/>
+        </LinearLayout>
+
+
+        <Switch
+            android:id="@+id/switch_shutdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时关机"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_tp_shutdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设定时间"/>
+            <TextView
+                android:id="@+id/txt_shutdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+        <Switch
+            android:id="@+id/switch_flightMode_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="定时开启飞行模式"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_fm_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设定开始时间"/>
+            <TextView
+                android:id="@+id/txt_flightMode_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <Switch
+            android:id="@+id/switch_flightMode_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时关闭飞行模式"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_fm_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设定关闭时间"/>
+            <TextView
+                android:id="@+id/txt_flightMode_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
